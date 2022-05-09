@@ -1,0 +1,127 @@
+@charset "utf-8";
+
+* {
+margin:0; padding:0; box-sizing:border-box;
+scroll-behavior: smooth;}
+
+ol, ul, li {list-style-type:none; font-family:'Montserrat', sans-serif;}
+a {text-decoration:none; font-family:'Montserrat', sans-serif; color:#fff;} 
+body {background-color:#eee;}
+
+
+
+
+/* 헤더 */
+#top {width:100vw; height:100vh; position:relative; color:#fff;}
+#toTop {background-color:#333; border:1px solid #333; font-family:'Montserrat', sans-serif; padding:20px; text-align:center; position:fixed; right:2%; bottom:5%; z-index:999; display:none;} 
+
+#Ro {width:100vw; height:100vh; background-image:url("../img/main/roma2.jpg"); background-size:cover; top: 0; left: 0; transition:all 0.5s;}
+
+
+
+
+.logoimg {width:60px; height:70px; float:left; margin:20px 0 0 50px;}
+.logoimg img {width:60px; height:60px;}
+.logotext {cursor:pointer; color:#fff; width:200px; height:70px; float:left; margin:20px 0 0 0;}
+.logotext span {font-family: 'Megrim', cursive;
+     font-size:50px; font-weight:bold;}
+    
+
+
+
+.search {width:300px; height:70px; position:absolute; top:5px; left:300px;}
+.search img {width:30px; height:30px; margin:30px 0 0 20px;}
+.search input {border:none; background:transparent; width:150px;font-size:20px; color:white; margin-left:10px;}
+
+
+
+
+.nav {width:auto; height:100px; font-family:'Montserrat', sans-serif;}
+.nav ul {float:right; margin-top:45px; margin-right:100px;}
+.nav ul>li {font-size:20px; float:left; margin:0 0 0 70px;}
+.nav .list {display:none;}
+
+
+
+
+.maintext {width:800px; height:500px;  position:absolute; top:270px; left:250px;}
+.maintext .Italy {font-family: 'Cinzel', serif; font-size:230px; font-weight:500; color:#fff; display:none;}
+.maintext .Toscana {font-family: 'Cinzel', serif; font-size:230px; font-weight:500; color:#fff; display:none;}
+.maintext .Sicilia {font-family: 'Cinzel', serif; font-size:230px; font-weight:500; color:#fff; display:none;} 
+.maintext .Roma {font-family: 'Cinzel', serif; font-size:230px; font-weight:500; color:#fff;} 
+
+.maintext span {font-family:'Montserrat', sans-serif; font-size:20px; font-weight:500; z-index:999; position:absolute;}
+.maintext span:nth-of-type(1) {margin-top:-40px; opacity:0.8; float:left; margin-left:10px;}
+.maintext span:nth-of-type(2) {margin-top:-40px; float:left; margin-left:270px;}
+.maintext span>a {font-weight:500; border-bottom:2px solid #fff;}
+.maintext button {width:140px; height:45px; border-radius:30px; font-size:20px; background-color:transparent; border:2px solid #fff; margin:50px 0 0 10px; font-family:'Montserrat', sans-serif; color:#fff;}
+.maintext img {width:80px; height:80px; position:absolute; top:340px; left:350px;}
+.maintext p {display:inline; margin-left:290px;font-family:'Montserrat', sans-serif; font-size:20px;opacity:0.8;}
+
+
+
+
+.change {width:300px; height:400px; border-radius:40px; position:absolute; top:170px; right:90px; overflow:hidden;}
+.change img {width:100%; height:100%; opacity:0.8; position:absolute;}
+
+
+
+
+.hover {width:600px; height:70px; position:absolute; bottom:220px; right:60px; font-family:'Montserrat'; font-weight:700;}
+.hover b {font-size:35px; margin-right:10px;}
+
+.hover ul li {float:left; font-size:20px; border-bottom:5px solid white; width:200px; height:70px; text-align:center;padding-top:15px}
+
+.hover ul li:nth-of-type(1) {border-bottom:5px solid green; transition:all 0.7s;}
+.hover ul li:nth-of-type(1):hover {background-color:green;}
+
+.hover ul li:nth-of-type(2) {border-bottom:5px solid #fff; transition:all 0.7s;}
+.hover ul li:nth-of-type(2):hover {background-color:#fff;}
+.hover ul li:nth-of-type(2):hover a{color:#333;}
+.hover ul li:nth-of-type(2):hover a b{color:#333;}
+
+.hover ul li:nth-of-type(3) {border-bottom:5px solid red; transition:all 0.7s; background-color:red;}
+.hover ul li:nth-of-type(3):hover {background-color:red;}
+
+
+
+
+.foot1 {width:200px; height:50px; position:absolute; bottom:50px; left:40px; cursor:pointer;}
+.foot1 img {width:40px; height:40px; opacity:0.8; margin:10px 12px 0 10px;}
+.foot1 img:nth-of-type(1):hover {opacity:1;}
+.foot1 img:nth-of-type(2):hover {opacity:1;}
+.foot1 img:nth-of-type(3):hover {opacity:1;}
+
+.foot2 {width:140px; height:50px; position:absolute; bottom:50px; right:40px; cursor:pointer;}
+.foot2 img {width:40px; height:40px; opacity:0.8; margin:10px 10px 0 12px;}
+.foot2 img:nth-of-type(1):hover {opacity:1;}
+.foot2 img:nth-of-type(2):hover {opacity:1;}
+
+
+
+
+/* 서브 */
+#sub {background-color:#fff; width:1200px; height:3000px; margin:0 auto;}
+
+
+
+
+/* 푸터 */
+#footer {background-color:#333; width:100vw; height:240px; position:relative; color:#fff;}
+.foot_er {width:1200px; height:200px; margin:0 auto;}
+
+.footerlogoimg {width:60px; height:70px; float:left; margin:30px 0 0 50px;}
+.footerlogoimg img {width:60px; height:60px;}
+.footerlogotext {cursor:pointer; color:#fff; width:200px; height:70px; float:left; margin:30px 0 0 0;}
+.footerlogotext span {font-family: 'Megrim', cursive; font-size:50px; font-weight:bold;}
+
+.email { float:left; width:500px; height:100px; margin-left:50px;}
+.email h4 {font-family:'Montserrat', sans-serif; font-size:20px; font-weight:300; margin-bottom:10px;}
+.email input {width:280px; height:50px; padding-left:20px; color:#333 !important;}
+
+.footernav {width:auto; height:100px; font-family:'Montserrat', sans-serif;}
+.footernav ul {float:right; margin-top:50px; margin-right:80px;}
+.footernav ul>li {font-size:20px; float:left; margin:0 0 0 70px;}
+
+.foot3 {width:200px; height:50px; float:right; margin-right:60px; cursor:pointer;}
+.foot3 img {width:40px; height:40px; opacity:0.8; margin:40px 12px 0 10px;}

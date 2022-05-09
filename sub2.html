@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+    <title>Sicilia</title>
+
+    <link rel="stylesheet" href="css/sub2.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Megrim&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+    
+</head>
+
+
+
+<body>
+
+    <!-- Sicilia -->
+    <!-- 헤더 -->
+    <div id="top">
+    
+        <a id="toTop" href="#">TOP</a>
+    
+        <div id="Sic">
+    
+            <div class="logoimg">
+                <a href="index.html"><img src="img/main/logo.png" alt="로고"></a>
+            </div>
+    
+            <div class="logotext">
+                <a href="index.html"><span>travel.</span></a>
+            </div>
+    
+            <div class="search">
+                <img src="img/main/search.png" alt="서치">
+                <input type="text" value="Search">
+            </div>
+    
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">Main</a></li>
+                    <li><a href="sub1.html">Toscana</a></li>
+                    <li><a href="sub2.html">Sicilia</a></li>
+                    <li><a href="sub3.html">Roma</a></li>
+                    <li class="click"><i class="fi fi-sr-menu-burger"></i>=
+                        <ol class="list">
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="maintext">
+                <h1 class="Italy">Italy</h1>
+                <h1 class="Toscana">Toscana</h1>
+                <h1 class="Sicilia">Sicilia</h1>
+                <h1 class="Roma">Roma</h1>
+    
+                <span>Amaging beautiful</span>
+                <span><a>Explore <i class="fa-solid fa-arrow-right"></i></a></span>
+    
+                <button class="start" onclick="location.href='#sub'">Book</button>
+            </div>
+    
+            <div class="change">
+            </div>
+    
+            <div class="hover">
+                <ul>
+                    <li class="sub1"><a href="sub1.html"><b>01</b> Toscana</a></li>
+                    <li class="sub2"><a href="sub2.html"><b>02</b> Sicilia</a></li>
+                    <li class="sub3"><a href="sub3.html"><b>03</b> Roma</a></li>
+                </ul>
+            </div>
+    
+            <div class="foot1">
+                <img src="img/main/keep.png" alt="저장">
+                <img src="img/main/going.png" alt="보내기">
+                <img src="img/main/png.png" alt="다운로드">
+            </div>
+    
+            <div class="foot2">
+                <img src="img/main/facebook.png" alt="페이스북">
+                <img src="img/main/twitter.png" alt="트위터">
+            </div>
+    
+        </div>
+    
+    </div>
+    
+    
+    
+    <!-- 서브페이지 -->
+    <div id="sub">
+    
+    </div>
+    
+    
+    
+    <!-- 푸터 -->
+    <div id="footer">
+    
+        <div class="foot_er">
+    
+            <div class="footerlogoimg">
+                <a href="index.html"><img src="img/main/logo.png" alt="로고"></a>
+            </div>
+    
+            <div class="footerlogotext">
+                <a href="index.html"><span>travel.</span></a>
+            </div>
+    
+            <div class="footernav">
+                <ul>
+                    <li><a href="index.html">Main</a></li>
+                    <li><a href="sub1.html">Toscana</a></li>
+                    <li><a href="sub2.html">Sicilia</a></li>
+                    <li><a href="sub3.html">Roma</a></li>
+                </ul>
+            </div>
+    
+            <div class="email">
+                <h4>Subscribe Our Newsletter</h4>
+                <input type="text" placeholder="Your Email">
+            </div>
+    
+            <div class="foot3">
+                <img src="img/main/facebook.png" alt="페이스북">
+                <img src="img/main/twitter.png" alt="트위터">
+                <img src="img/main/youtube.png" alt="유튜브">
+            </div>
+    
+        </div>
+    
+    </div>
+
+
+
+
+
+
+
+    <!-- 스크립트 -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script>
+       $(document).ready(function(){
+
+        // 리스트
+        $('.click').click(function () {
+               $('.list').slideToggle();
+
+           });
+
+
+
+
+        // 백그라운드 전환
+           $('.sub1').hover(function () { $('#Sic').css("background-image", "url(./img/main/toscanamain.jpg)"); },
+               function () { $('#Sic').css("background-image", "url(./img/main/siciliamain2.jpg)"); });
+
+           $('.sub3').hover(function () { $('#Sic').css("background-image", "url(./img/main/romamain2.png)"); },
+               function () { $('#Sic').css("background-image", "url(./img/main/siciliamain2.jpg)"); });
+
+
+
+        // 메인텍스트 전환
+           $('.sub1').hover(function () {
+               $('.Toscana').stop().fadeIn();
+               $('.Sicilia').hide();
+           }, function () {
+               $('.Sicilia').stop().fadeIn();
+               $('.Toscana').hide();
+           });
+
+           $('.sub3').hover(function () {
+               $('.Roma').stop().fadeIn();
+               $('.Sicilia').hide();
+           }, function () {
+               $('.Sicilia').stop().fadeIn();
+               $('.Roma').hide();
+           });
+
+
+        // 탑버튼
+           $(function() {
+             $(window).scroll(function() { 
+                 if ($(this).scrollTop() > 250) { 
+                 $('#toTop').fadeIn(); } else { $('#toTop').fadeOut(); } 
+                });
+                 $("#toTop").click(function() { $('html, body').stop().animate({ scrollTop : 0
+                    }, 200);
+                     return false; }); });
+
+       });
+    </script>
+</body>
+</html>
